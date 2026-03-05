@@ -20,5 +20,5 @@ jobs:
       - name: Compile all Java sources
         run: |
           mkdir -p out
-          find . -name "*.java" > sources.txt
+          find src -name "*.java" > sources.txt
           javac -encoding UTF-8 -d out @sources.txt
